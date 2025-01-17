@@ -19,10 +19,6 @@ operable program or batch file.
 
 (base) C:\Users\habee\yolov5-master>notepad requirements.txt
 
-(base) C:\Users\habee\yolov5-master>pip install -r requirements.txt
-ERROR: Invalid requirement: '"torch"': Expected package name at the start of dependency specifier
-    "torch"
-    ^ (from line 1 of requirements.txt)
 
 (base) C:\Users\habee\yolov5-master>notepad requirements.txt
 
@@ -197,20 +193,3 @@ image 1/1 C:\Users\habee\OneDrive\Pictures\xposatimg7.jpg: 640x480 (no detection
 Speed: 0.0ms pre-process, 253.7ms inference, 0.0ms NMS per image at shape (1, 3, 640, 640)
 Results saved to runs\detect\exp5
 
-(base) C:\Users\habee\yolov5-master>git add .
-
-(base) C:\Users\habee\yolov5-master>git commit -m "Implemented object detection using YOLOv5"
-[main 67a6698] Implemented object detection using YOLOv5
- 1 file changed, 6 insertions(+), 49 deletions(-)
-
-(base) C:\Users\habee\yolov5-master>git push -u origin main
-To https://github.com/Jasminekadhermeera/CodeaAlpha_languagetranslationatool
- ! [rejected]        main -> main (fetch first)
-error: failed to push some refs to 'https://github.com/Jasminekadhermeera/CodeaAlpha_languagetranslationatool'
-hint: Updates were rejected because the remote contains work that you do not
-hint: have locally. This is usually caused by another repository pushing to
-hint: the same ref. If you want to integrate the remote changes, use
-hint: 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-
-(base) C:\Users\habee\yolov5-master>
