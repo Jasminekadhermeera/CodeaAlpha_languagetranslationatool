@@ -1,0 +1,216 @@
+
+(base) C:\Users\habee>cd C:\Users\habee\yolov5-master
+
+(base) C:\Users\habee\yolov5-master>echo torch >> requirements.txt
+
+(base) C:\Users\habee\yolov5-master>echo torchvision >> requirements.txt
+
+(base) C:\Users\habee\yolov5-master>echo opencv-python >> requirements.txt
+
+(base) C:\Users\habee\yolov5-master>echo Pillow >> requirements.txt
+
+(base) C:\Users\habee\yolov5-master>echo matplotlib >> requirements.txt
+
+(base) C:\Users\habee\yolov5-master>echo ultralytics >> requirements.txt
+
+(base) C:\Users\habee\yolov5-master>cat requirements.txt
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+(base) C:\Users\habee\yolov5-master>notepad requirements.txt
+
+(base) C:\Users\habee\yolov5-master>pip install -r requirements.txt
+ERROR: Invalid requirement: '"torch"': Expected package name at the start of dependency specifier
+    "torch"
+    ^ (from line 1 of requirements.txt)
+
+(base) C:\Users\habee\yolov5-master>notepad requirements.txt
+
+(base) C:\Users\habee\yolov5-master>pip install -r requirements.txt
+Requirement already satisfied: torch in c:\users\habee\anaconda3\lib\site-packages (from -r requirements.txt (line 1)) (2.5.1)
+Requirement already satisfied: torchvision in c:\users\habee\anaconda3\lib\site-packages (from -r requirements.txt (line 2)) (0.20.1)
+Requirement already satisfied: opencv-python in c:\users\habee\anaconda3\lib\site-packages (from -r requirements.txt (line 3)) (4.11.0.86)
+Requirement already satisfied: Pillow in c:\users\habee\anaconda3\lib\site-packages (from -r requirements.txt (line 4))(11.1.0)
+Requirement already satisfied: matplotlib in c:\users\habee\anaconda3\lib\site-packages (from -r requirements.txt (line5)) (3.10.0)
+Requirement already satisfied: ultralytics in c:\users\habee\anaconda3\lib\site-packages (from -r requirements.txt (line 6)) (8.3.63)
+Requirement already satisfied: filelock in c:\users\habee\anaconda3\lib\site-packages (from torch->-r requirements.txt (line 1)) (3.16.1)
+Requirement already satisfied: typing-extensions>=4.8.0 in c:\users\habee\anaconda3\lib\site-packages (from torch->-r requirements.txt (line 1)) (4.12.2)
+Requirement already satisfied: networkx in c:\users\habee\anaconda3\lib\site-packages (from torch->-r requirements.txt (line 1)) (3.4.2)
+Requirement already satisfied: jinja2 in c:\users\habee\anaconda3\lib\site-packages (from torch->-r requirements.txt (line 1)) (3.1.5)
+Requirement already satisfied: fsspec in c:\users\habee\anaconda3\lib\site-packages (from torch->-r requirements.txt (line 1)) (2024.12.0)
+Requirement already satisfied: sympy==1.13.1 in c:\users\habee\anaconda3\lib\site-packages (from torch->-r requirements.txt (line 1)) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in c:\users\habee\anaconda3\lib\site-packages (from sympy==1.13.1->torch->-r requirements.txt (line 1)) (1.3.0)
+Requirement already satisfied: numpy in c:\users\habee\anaconda3\lib\site-packages (from torchvision->-r requirements.txt (line 2)) (2.2.1)
+Requirement already satisfied: contourpy>=1.0.1 in c:\users\habee\anaconda3\lib\site-packages (from matplotlib->-r requirements.txt (line 5)) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in c:\users\habee\anaconda3\lib\site-packages (from matplotlib->-r requirements.txt (line 5)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in c:\users\habee\anaconda3\lib\site-packages (from matplotlib->-r requirements.txt (line 5)) (4.55.3)
+Requirement already satisfied: kiwisolver>=1.3.1 in c:\users\habee\anaconda3\lib\site-packages (from matplotlib->-r requirements.txt (line 5)) (1.4.8)
+Requirement already satisfied: packaging>=20.0 in c:\users\habee\anaconda3\lib\site-packages (from matplotlib->-r requirements.txt (line 5)) (24.2)
+Requirement already satisfied: pyparsing>=2.3.1 in c:\users\habee\anaconda3\lib\site-packages (from matplotlib->-r requirements.txt (line 5)) (3.2.1)
+Requirement already satisfied: python-dateutil>=2.7 in c:\users\habee\anaconda3\lib\site-packages (from matplotlib->-r requirements.txt (line 5)) (2.9.0.post0)
+Requirement already satisfied: pyyaml>=5.3.1 in c:\users\habee\anaconda3\lib\site-packages (from ultralytics->-r requirements.txt (line 6)) (6.0.2)
+Requirement already satisfied: requests>=2.23.0 in c:\users\habee\anaconda3\lib\site-packages (from ultralytics->-r requirements.txt (line 6)) (2.32.3)
+Requirement already satisfied: scipy>=1.4.1 in c:\users\habee\anaconda3\lib\site-packages (from ultralytics->-r requirements.txt (line 6)) (1.15.1)
+Requirement already satisfied: tqdm>=4.64.0 in c:\users\habee\anaconda3\lib\site-packages (from ultralytics->-r requirements.txt (line 6)) (4.67.1)
+Requirement already satisfied: psutil in c:\users\habee\anaconda3\lib\site-packages (from ultralytics->-r requirements.txt (line 6)) (6.1.1)
+Requirement already satisfied: py-cpuinfo in c:\users\habee\anaconda3\lib\site-packages (from ultralytics->-r requirements.txt (line 6)) (9.0.0)
+Requirement already satisfied: pandas>=1.1.4 in c:\users\habee\anaconda3\lib\site-packages (from ultralytics->-r requirements.txt (line 6)) (2.2.3)
+Requirement already satisfied: seaborn>=0.11.0 in c:\users\habee\anaconda3\lib\site-packages (from ultralytics->-r requirements.txt (line 6)) (0.13.2)
+Requirement already satisfied: ultralytics-thop>=2.0.0 in c:\users\habee\anaconda3\lib\site-packages (from ultralytics->-r requirements.txt (line 6)) (2.0.14)
+Requirement already satisfied: pytz>=2020.1 in c:\users\habee\anaconda3\lib\site-packages (from pandas>=1.1.4->ultralytics->-r requirements.txt (line 6)) (2024.2)
+Requirement already satisfied: tzdata>=2022.7 in c:\users\habee\anaconda3\lib\site-packages (from pandas>=1.1.4->ultralytics->-r requirements.txt (line 6)) (2024.2)
+Requirement already satisfied: six>=1.5 in c:\users\habee\anaconda3\lib\site-packages (from python-dateutil>=2.7->matplotlib->-r requirements.txt (line 5)) (1.17.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\habee\anaconda3\lib\site-packages (from requests>=2.23.0->ultralytics->-r requirements.txt (line 6)) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\habee\anaconda3\lib\site-packages (from requests>=2.23.0->ultralytics->-r requirements.txt (line 6)) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\habee\anaconda3\lib\site-packages (from requests>=2.23.0->ultralytics->-r requirements.txt (line 6)) (2.3.0)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\habee\anaconda3\lib\site-packages (from requests>=2.23.0->ultralytics->-r requirements.txt (line 6)) (2024.12.14)
+Requirement already satisfied: colorama in c:\users\habee\anaconda3\lib\site-packages (from tqdm>=4.64.0->ultralytics->-r requirements.txt (line 6)) (0.4.6)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\habee\anaconda3\lib\site-packages (from jinja2->torch->-r requirements.txt (line 1)) (3.0.2)
+
+(base) C:\Users\habee\yolov5-master>python detect.py --source C:\Users\habee\OneDrive\Pictures\xposatimg7.jpg
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.2.1 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "C:\Users\habee\yolov5-master\detect.py", line 48, in <module>
+    from models.common import DetectMultiBackend
+  File "C:\Users\habee\yolov5-master\models\common.py", line 18, in <module>
+    import pandas as pd
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\__init__.py", line 39, in <module>
+    from pandas.compat import (
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\compat\__init__.py", line 27, in <module>
+    from pandas.compat.pyarrow import (
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\compat\pyarrow.py", line 8, in <module>
+    import pyarrow as pa
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pyarrow\__init__.py", line 65, in <module>
+    import pyarrow.lib as _lib
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.2.1 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "C:\Users\habee\yolov5-master\detect.py", line 48, in <module>
+    from models.common import DetectMultiBackend
+  File "C:\Users\habee\yolov5-master\models\common.py", line 18, in <module>
+    import pandas as pd
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\__init__.py", line 62, in <module>
+    from pandas.core.api import (
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\api.py", line 9, in <module>
+    from pandas.core.dtypes.dtypes import (
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\dtypes\dtypes.py", line 24, in <module>
+    from pandas._libs import (
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pyarrow\__init__.py", line 65, in <module>
+    import pyarrow.lib as _lib
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.2.1 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "C:\Users\habee\yolov5-master\detect.py", line 48, in <module>
+    from models.common import DetectMultiBackend
+  File "C:\Users\habee\yolov5-master\models\common.py", line 18, in <module>
+    import pandas as pd
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\__init__.py", line 62, in <module>
+    from pandas.core.api import (
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\arrays\__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\arrays\arrow\__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\arrays\arrow\array.py", line 50, in <module>
+    from pandas.core import (
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\ops\__init__.py", line 8, in <module>
+    from pandas.core.ops.array_ops import (
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\ops\array_ops.py", line 56, in <module>
+    from pandas.core.computation import expressions
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\computation\expressions.py", line 21, in <module>
+    from pandas.core.computation.check import NUMEXPR_INSTALLED
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\computation\check.py", line 5, in <module>
+    ne = import_optional_dependency("numexpr", errors="warn")
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\compat\_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "C:\Users\habee\anaconda3\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "C:\Users\habee\anaconda3\Lib\site-packages\numexpr\__init__.py", line 24, in <module>
+    from numexpr.interpreter import MAX_THREADS, use_vml, __BLOCK_SIZE1__
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.2.1 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "C:\Users\habee\yolov5-master\detect.py", line 48, in <module>
+    from models.common import DetectMultiBackend
+  File "C:\Users\habee\yolov5-master\models\common.py", line 18, in <module>
+    import pandas as pd
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\__init__.py", line 62, in <module>
+    from pandas.core.api import (
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\arrays\__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\arrays\arrow\__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\arrays\arrow\array.py", line 64, in <module>
+    from pandas.core.arrays.masked import BaseMaskedArray
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\arrays\masked.py", line 60, in <module>
+    from pandas.core import (
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\core\nanops.py", line 52, in <module>
+    bn = import_optional_dependency("bottleneck", errors="warn")
+  File "C:\Users\habee\anaconda3\Lib\site-packages\pandas\compat\_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "C:\Users\habee\anaconda3\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "C:\Users\habee\anaconda3\Lib\site-packages\bottleneck\__init__.py", line 7, in <module>
+    from .move import (move_argmax, move_argmin, move_max, move_mean, move_median,
+AttributeError: _ARRAY_API not found
+detect: weights=yolov5s.pt, source=C:\Users\habee\OneDrive\Pictures\xposatimg7.jpg, data=data\coco128.yaml, imgsz=[640,640], conf_thres=0.25, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_format=0, save_csv=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs\detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5  95a4c54 Python-3.11.5 torch-2.5.1+cpu CPU
+
+Fusing layers...
+YOLOv5s summary: 213 layers, 7225885 parameters, 0 gradients, 16.4 GFLOPs
+image 1/1 C:\Users\habee\OneDrive\Pictures\xposatimg7.jpg: 640x480 (no detections), 253.7ms
+Speed: 0.0ms pre-process, 253.7ms inference, 0.0ms NMS per image at shape (1, 3, 640, 640)
+Results saved to runs\detect\exp5
+
+(base) C:\Users\habee\yolov5-master>git add .
+
+(base) C:\Users\habee\yolov5-master>git commit -m "Implemented object detection using YOLOv5"
+[main 67a6698] Implemented object detection using YOLOv5
+ 1 file changed, 6 insertions(+), 49 deletions(-)
+
+(base) C:\Users\habee\yolov5-master>git push -u origin main
+To https://github.com/Jasminekadhermeera/CodeaAlpha_languagetranslationatool
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Jasminekadhermeera/CodeaAlpha_languagetranslationatool'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+(base) C:\Users\habee\yolov5-master>
